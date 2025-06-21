@@ -1,6 +1,5 @@
 /* General */
 
-
 /* Reset and full-screen layout */
 * {
   margin: 0;
@@ -8,7 +7,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100vh;
   width: 100vw;
   font-family: Arial, sans-serif;
@@ -21,7 +21,7 @@ html, body {
   padding-left: 9px;
   left: 50%;
   transform: translateX(-50%);
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
   font-size: 5rem;
   color: white;
   z-index: 10;
