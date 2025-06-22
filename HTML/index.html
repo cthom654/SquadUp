@@ -7,24 +7,25 @@
   <title>SQUADUP</title>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../CSS/style.css" />
+
 </head>
 
 <body>
+  <div id="splash-screen">
+    <div class="splash-text">Choose YOUR path...</div>
+  </div>
 
   <div class="title-screen">
     <div class="title">
-      <span class="squ-gold">SQU</span>
-      <span class="a-half a-left">A</span>
-      <span class="a-half a-right">A</span>
-      <span class="dup-white">DUP</span>
+      <span class="squad">SQUAD</span><span class="up">UP</span>
     </div>
   </div>
 
 <div class="panel-row">
     
-        <div class="panel left">
+        <div class="panel left" id="tryhard-panel" onClick="location.href='tryhardMenu.html';">
         <div class="content">
             <h2>TRYHARD</h2>
             <p>Choose this path to be matched with duos who live for tight comms and zero excuses. Built for ranked grinders. Those who play to win.</p>
@@ -32,7 +33,7 @@
         </div>
     </div>
 
-        <div class="panel right">
+        <div class="panel right" id="casual-panel" onClick="location.href='casualMenu.html';">
         <div class="content">
             <h2>CASUAL</h2>
             <p>Pick this side to match with players who just want to vibe and play for fun. Built for easygoing comms, and no pressure.</p>
@@ -41,7 +42,7 @@
         </div>
     </div>
 </div>
-
+    <script src="../JAVA/script.js"></script>
 </body>
 
 </html>
