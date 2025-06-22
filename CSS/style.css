@@ -18,8 +18,8 @@ html, body {
 .title {
   position: absolute;
   top: 100px;
-  padding-left: 9px;
-  left: 50%;
+  padding-left: 10px;
+  left: calc(50% + 1px);
   transform: translateX(-50%);
   font-family: 'Press Start 2P', cursive;
   font-size: 5rem;
@@ -27,8 +27,40 @@ html, body {
   z-index: 10;
   text-shadow: 3px -10px 3px rgba(0, 0, 0, 5);
   -webkit-text-stroke: 2px black;
+  white-space: nowrap; /* Prevents text wrapping */
 }
 
+.squ-gold {
+  color: gold;
+}
+
+.a-half {
+  position: absolute;
+  top: 0;
+  left: 50%; /* Center the A */
+  width: 0.9em; /* Adjust as needed for your font */
+  height: 100%;
+  overflow: hidden;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  pointer-events: none;
+}
+
+.a-left {
+  color: gold;
+  clip-path: inset(0 0 0 -58%);
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.a-right {
+  color: white;
+  clip-path: inset(0 0 0 49%);
+  z-index: 3;
+  transform: translateX(-50%)
+}
 /* Container for left and right halves */
 .panel-row {
   display: flex;
@@ -46,20 +78,43 @@ html, body {
 }
 
 .left {
-  background-image: url("assets/tryahrds.png"); /* red */
+  background-image: url("../assets/tryahrds.png"); /* red */
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: gold;
+  font-family: "Bebas Neue"
 }
 
 .right {
-  background-image: url("assets/download.jpg"); /* blue */
+  background-image: url("../assets/download.jpg"); /* blue */
   background-repeat: no-repeat;
   background-size: cover;
+  color: white;
+  font-family: "Baloo Bhaina";
 }
 
 /* Centered content */
 .content {
-  padding: 2rem;
-  border-radius: 10px;
+  border-radius: 5px;
   text-align: center;
-  color: white;
   font-size: 1.5rem;
 }
+
+.left .content h2 {
+}
+
+.right .content h2 {
+}
+
+.left .content h3 {
+}
+
+.right .content h3 { 
+}
+
+.left .content p {
+}
+
+.right .content p {
+}
+
