@@ -21,8 +21,8 @@ html, body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 2000px;
-  height: 1000px;
+  width: 100vw;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
   display: flex;
@@ -31,8 +31,7 @@ html, body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 2rem;
   z-index: 9999;
-  cursor: pointer;
-  border-radius: 25px; /* 🎯 Rounded edges */
+  cursor: pointer; /* 🎯 Rounded edges */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -85,10 +84,18 @@ html, body {
   padding: 1rem;
 }
 
-.panel:hover {
+.left:hover {
   transform: scale(1.05); /* ✅ */
   transition: transform 0.3s ease-in-out;
-  cursor: pointer;
+  cursor: pointer; 
+  background-image: url("../assets/tryhard.gif");
+}
+
+.right:hover {
+  transform: scale(1.05); /* ✅ */
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer; 
+  background-image: url("../assets/casual.gif");
 }
 
 .left {
