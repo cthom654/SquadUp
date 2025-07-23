@@ -4,24 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gaming Dashboard</title>
-    <link rel="stylesheet" href="../CSS/profile.css">
+    <!-- <link rel="stylesheet" href="../CSS/profile.css"> -->
 </head>
+  
 <body>
-    <div class="container">
-        <!--SIDEBAR--> 
-        <div class="sidebar">
-            <div class="logo">SquadUP</div>
-
-            <div class="nav-item active">🏠 Home page</div>
-            <div class="nav-item">🏆 Leaderboards</div>
-
-            <div class="logo">Stats on:</div>
-            <div class="nav-item">CS:GO</div>
-            <div class="nav-item">Fortnite</div>
-            <div class="nav-item">League of Legends</div>
-            <div class="nav-item">Valorant</div>
-            <div class="nav-item">Overwatch</div>
-        </div>
+    <!--MAIN CONTENT-->
+    <div class="main-content"> 
+        <div class="header">
+            <div class="search-container">
+                <input type="text" placeholder="Player Search..."/>
+                <a href="searchresults.html"><img src="../assets/SearchIcon.png" class="searchicon" /></a>
+            </div>
+        </div> 
+    </div>   
+    <!--SIDEBAR--> 
+<!-- Sidebar container -->
+    <div class="sidebar">
+        <div class="logo">SquadUP</div>
+        <div class="nav-item">Connected Players</div>
+        <div class="nav-item">Online</div>
+        <div class="nav-item active">🏠 Home page</div>
+        <div class="nav-item">🏆 Leaderboards</div>
+        <div class="logo">Stats on:</div>
+        <div class="nav-item">CS:GO</div>
+        <div class="nav-item">Fortnite</div>
+        <div class="nav-item">League of Legends</div>
+        <div class="nav-item">Valorant</div>
+        <div class="nav-item">Overwatch</div>
+        <div class="nav-item">Contact Us</div>
+        <button id="reportBtn">Report</button>
+        <button id="logoutBtn">Logout</button>
     </div>
+
 </body>
 </html>
